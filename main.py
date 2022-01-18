@@ -3,24 +3,27 @@ TOKEN = "insertToken"
 
 bot = commands.Bot(command_prefix="!")
 
+
 @bot.event
 # Login message
 async def on_ready():
     print(f'{bot.user} succesfully logged in!')
 
+
 @bot.event
 async def on_message(message):
     # Make sure the Bot doesn't respond to it's own messages
-    if message.author == bot.user: 
+    if message.author == bot.user:
         return
     # Echo function
     if (message.content.startswith('/echo ')):
-        await message.channel.send(message.content.replace(message.content[0:6],'',1))
-        print(f'{bot.user} echoed following message: ' + message.content.replace(message.content[0:6],'',1))
+        await message.channel.send(message.content.replace(message.content[0:6], '', 1))
+        print(f'{bot.user} echoed following message: ' +
+              message.content.replace(message.content[0:6], '', 1))
     # Calc function
     try:
         if (message.content.startswith('/calc ')):
-            remCalc = message.content.replace(message.content[0:6],'',1)
+            remCalc = message.content.replace(message.content[0:6], '', 1)
             await message.channel.send(eval(remCalc))
 
     except SyntaxError:
