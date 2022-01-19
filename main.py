@@ -1,5 +1,5 @@
 from discord.ext import commands
-TOKEN = "insertToken"
+TOKEN = "OTMzNDA0Nzg2NTA0NjMwMzMy.YehC8g.QNKuNCvW6y83VvITBC60xAOBLQk"
 
 bot = commands.Bot(command_prefix="!")
 
@@ -25,7 +25,6 @@ async def on_message(message):
         if (message.content.startswith('/calc ')):
             remCalc = message.content.replace(message.content[0:6], '', 1)
             await message.channel.send(eval(remCalc))
-
     except SyntaxError:
         await message.channel.send('Rechnung konnte nicht durchgeführt werden, bitte prüfe Eingabe')
     except NameError:
