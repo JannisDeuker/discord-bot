@@ -1,8 +1,8 @@
 from discord.ext import commands
-TOKEN = "insertToken"
+TOKEN = "OTMzNDA0Nzg2NTA0NjMwMzMy.YehC8g.80ycR0GNu2VTfXWY_LC900Z2geg"
 
 bot = commands.Bot(command_prefix="!")
-
+# hallo
 
 @bot.event
 # Login message
