@@ -1,11 +1,5 @@
 # discord-bot
 
-
-```mermaid
-graph TD;
-    .csv-data --> |convert| .sql --> |import into| id1[(postgreDB)]
-```
-
 ## **simple discord-bot with echo and calculation function**
 
 ### **prerequisites**:
