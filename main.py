@@ -1,5 +1,5 @@
 from discord.ext import commands
-TOKEN = "OTMzNDA0Nzg2NTA0NjMwMzMy.YehC8g.80ycR0GNu2VTfXWY_LC900Z2geg"
+TOKEN = "Token"
 
 bot = commands.Bot(command_prefix="!")
 # hallo
